@@ -12,3 +12,24 @@ Software, solutions for (Ubuntu) Linux
    
    Some commands I find useful:
    
+## Docker
+
+### Use Docker as [non-root](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
+
+```bash
+sudo groupadd docker  # create a group
+sudo usermod -aG docker $USER  # add the current user to that group
+newgrp docker  # activate the changes to the groups
+docker run hello-world  # verify that you can run docker commands without sudo
+```
+
+Whenever you want to use Docker without root privileges, type `newgrp docker` to the terminal.
+
+### [Kitematic](https://kitematic.com/)
+
+Download and install the [latest release](https://github.com/docker/kitematic/releases).
+To use [without root privileges](https://github.com/docker/kitematic/issues/2528#issuecomment-292029858): open a terminal and type
+```bash
+newgrp docker
+kitematic
+```
