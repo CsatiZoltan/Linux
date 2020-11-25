@@ -1,6 +1,10 @@
 # Linux
 Software, solutions for (Ubuntu) Linux
 
+## Built-in Unix commands
+
+- [Search for text in all the files within a directory](https://stackoverflow.com/a/15287389/4892892): `grep -rni "your_keyword" *`
+
 ## Security
 
 ### [Lynis](https://cisofy.com/documentation/lynis/)
