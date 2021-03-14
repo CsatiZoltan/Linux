@@ -37,3 +37,13 @@ To use [without root privileges](https://github.com/docker/kitematic/issues/2528
 newgrp docker
 kitematic
 ```
+
+## Audio-video
+
+### ffmpeg
+
+- [Convert all audio files in a directory](https://stackoverflow.com/a/33766147/4892892)
+   ```bash
+   for i in *.wav; do ffmpeg -i "$i" -acodec mp3 "${i%.*}.mp3"; done
+   ```
+
