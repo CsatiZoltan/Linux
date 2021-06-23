@@ -1,6 +1,10 @@
 # Linux
 Software, solutions for (Ubuntu) Linux
 
+## Processes
+
+- [Kill a process by clicking on its window](https://www.mfitzp.com/tutorials/kill-unresponsive-applications-on-linux/)
+
 ## Built-in Unix commands
 
 - [Search for text in all the files within a directory](https://stackoverflow.com/a/15287389/4892892): `grep -rni "your_keyword" *`
